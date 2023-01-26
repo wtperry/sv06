@@ -2,9 +2,11 @@
 
 ## NOTE THIS IS HIGHLY EXPERIMENTAL FIRMWARE! USE AT YOUR OWN RISK!
 
+## This is for the STOCK Sovol mainboard that comes with the SV06
+
 ### Testing steps for this firmware.
 
-* Download firmware here  ( current version v.54 from January 19th, 2023 )
+* Grab latest version (or whichever version you like) from the release section here
 * Put binary on a fresh FAT32 formatted SD card and insert the sd card into your SV06 while it is powered off
 * Boot up SV06.  It may take 10-20 seconds. Screen will flash and it should boot. The SV06 Stock board can sometimes be temperamental with sd cards & flashing, if your flash fails & you're left with a blue screen only, switch off & try another card, a new name brand with a fresh format helps.
 * It should reset the eeprom when changing a major firmware, but you can config/advanced/initialize eeprom & reset too if you wish.
@@ -42,6 +44,6 @@ G29 J3 ; Probe 9 points to check mesh
 * X-Twist Reset Menu : A menu option was added to reset the X-Twist data and turn it off. This would be useful if you want to wipe the twist as you don’t need it, or want to try it without it. NOTE: You must save your settings if you want to make the disabling persistent after a power off. Plus you need to redo your UBL mesh.
 * PID Extruder and Bed Control
 * Power Loss Recover This feature is turned off by default
-* Filament Runout Sensor Support This feature is turned off by default. The SV06 doesn’t come with a runout sensor, so here is a link to Rory’s design for a mount to install one on your SV06
+* Filament Runout Sensor Support This feature is turned off by default. The SV06 doesn’t come with a runout sensor, so here is a [link](https://www.printables.com/model/347596-endstop-runout-sensor) to Rory’s design for a mount to install one on your SV06
 *  Z-Offset Wizard. If you don’t need the X-Twist because your X gantry isn’t twisted you can use this wizard to adjust your Z-Offset
 * Rory’s tweaks
